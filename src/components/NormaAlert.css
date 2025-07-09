@@ -1,0 +1,27 @@
+/* components/NormaAlert.css */
+.norma-alert {
+  background-color: #1e293b;
+  border-left: 8px solid;
+  padding: 14px 20px;
+  border-radius: 10px;
+  color: #f8fafc;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+}
+
+.norma-alert strong {
+  font-size: 1.1rem;
+  color: #facc15;
+}
+
+.norma-alert p {
+  margin: 5px 0;
+}
+
+.nivel {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}

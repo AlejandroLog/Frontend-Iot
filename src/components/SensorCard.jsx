@@ -1,13 +1,12 @@
-import React from "react";
-import "./SensorCard.css";
-
-const SensorCard = ({ title, value, unit, icon, color }) => {
+// components/SensorCard.jsx
+export default function SensorCard({ title, value, unit, icon, color }) {
   return (
-    <div className="card" style={{ borderLeft: `8px solid ${color}` }}>
-      <h3>{icon} {title}</h3>
-      <p>{value} {unit}</p>
+    <div className="sensor-card">
+      <div className="sensor-icon" style={{ color }}>{icon}</div>
+      <div className="sensor-title">{title}</div>
+      <div className="sensor-value">
+        {value} <span style={{ fontSize: "1rem", color: "#cbd5e1" }}>{unit}</span>
+      </div>
     </div>
   );
-};
-
-export default SensorCard;
+}
